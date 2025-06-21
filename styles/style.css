@@ -1,0 +1,535 @@
+/*  
+* GoogleFonts
+*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: "Fira Sans", serif; */
+
+/*  
+* GlobalStyle
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #0e0e0e;
+  font-family: "Fira Sans", serif;
+}
+header {
+  padding: 0 120px;
+}
+main {
+  padding: 0 120px;
+}
+
+.btn-primary {
+  padding: 15px 30px;
+  border-radius: 8px;
+  border: 2px solid green;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: green;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-secondary {
+  padding: 15px 30px;
+  border-radius: 8px;
+  border: 2px solid green;
+  color: green;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.section-heading {
+  font-size: 40px;
+  font-weight: 700;
+}
+.section-description {
+  color: #0e0e0e70;
+}
+
+/*  
+* NavStyle
+*/
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+nav ul .logo {
+  font-size: 32px;
+  font-weight: 700;
+}
+nav li .btn-secondary:hover {
+  background-color: green;
+  border-color: green;
+  color: #ffffff;
+}
+
+/*  
+* BannerStyle
+*/
+.banner .banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c6e4d6;
+  border-radius: 24px;
+  padding: 60px 80px;
+}
+.banner .banner-container .sub-title {
+  color: #0e0e0e;
+  font-size: 24px;
+  font-weight: 500;
+}
+.banner .banner-container .title {
+  font-size: 46px;
+  font-weight: 700;
+  padding: 15px 0;
+}
+.banner .banner-container .button-container .btn-primary:hover {
+  background-color: transparent;
+  color: green;
+}
+
+/*  
+* PillarStyle
+*/
+.pillar,
+.vision {
+  padding: 80px 0;
+}
+.pillar .pillar-container .section-heading,
+.vision .vision-container .section-heading {
+  padding-bottom: 30px;
+}
+.pillar .pillar-container .pillar-items,
+.vision .vision-container .vision-items {
+  display: flex;
+  gap: 24px;
+}
+.pillar .pillar-container .pillar-item,
+.vision .vision-container .vision-item {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+}
+.pillar .pillar-container .pillar-item .icon,
+.vision .vision-container .vision-item .icon {
+  width: 64px;
+}
+.pillar .pillar-container .pillar-item .icon img,
+.vision .vision-container .vision-item .icon img {
+  width: 100%;
+}
+.pillar .pillar-container .pillar-item .pillar-title,
+.vision .vision-container .vision-item .vision-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+/*  
+* VisionStyle
+*/
+.vision {
+  padding-top: 0;
+}
+.vision-container .section-description {
+  padding-bottom: 30px;
+}
+.vision .button-container .vision-btn-1 {
+  background-color: #5490f5;
+  border-color: #5490f5;
+}
+.vision .button-container .vision-btn-1:hover {
+  background-color: #3a79e6;
+  border-color: #3a79e6;
+}
+.vision .button-container .vision-btn-2 {
+  background-color: #09a15c;
+  border-color: #09a15c;
+}
+.vision .button-container .vision-btn-2:hover {
+  background-color: #0e9156;
+  border-color: #0e9156;
+}
+.vision .button-container .vision-btn-3 {
+  background-color: #ffc239;
+  border-color: #ffc239;
+}
+.vision .button-container .vision-btn-3:hover {
+  background-color: #e4ad2d;
+  border-color: #e4ad2d;
+}
+
+.vision .vision-item.vision-item-1 {
+  background-color: #5490f520;
+}
+.vision .vision-item.vision-item-2 {
+  background-color: #c6e4d6;
+}
+.vision .vision-item.vision-item-3 {
+  background-color: #f7ebcf;
+}
+.vision-item .vision-description {
+  padding-bottom: 30px;
+}
+
+/*  
+* QuoteStyle
+*/
+.quote {
+  padding-bottom: 80px;
+}
+.quote .quote-container {
+  background-color: #ffffff;
+  padding: 24px 48px;
+  border: 1px solid #0e0e0e15;
+  border-radius: 16px;
+}
+.quote .quote-container .quote-description {
+  background-image: url(../assets/quote-bg.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  padding: 24px 0;
+  line-height: 24px;
+}
+.quote .author {
+  display: block;
+  padding: 15px 0 5px;
+}
+.quote .designation {
+  display: block;
+  padding: 5px 0;
+}
+
+/*  
+* OptionStyle
+*/
+.option {
+  padding-bottom: 80px;
+}
+.option .option-container .questions {
+  padding: 32px;
+  margin-top: 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+.option .option-container .questions-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #c6e4d6;
+  border: 1px solid #0e0e0e15;
+  padding: 24px;
+}
+.option .option-container .questions-header h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.option .questions-body .question-item {
+  border: 1px solid #0e0e0e15;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.option .questions-body .question-item .question {
+  font-weight: 600;
+  padding: 24px;
+}
+.option .questions-body .question-item .answer {
+  padding: 12px;
+  border-left: 1px solid #0e0e0e15;
+}
+.option .questions-body .question-item .answer select {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+}
+
+/*  
+* RecentNewsStyle
+*/
+.recent-news .recent-news-container .section-heading {
+  padding-bottom: 24px;
+}
+.recent-news .news-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 48px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  margin-top: 32px;
+}
+.recent-news .news-item.reverse {
+  flex-direction: row-reverse;
+}
+.recent-news .news-item .image img {
+  border-radius: 24px;
+}
+.recent-news .news-item .content .title {
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+.recent-news .news-item .content .company-logo {
+  padding-bottom: 12px;
+}
+.recent-news .news-item .content .date {
+  font-size: 16px;
+}
+.recent-news .news-item .content .news-description {
+  padding: 12px 0 32px;
+}
+.recent-news .btn-primary:hover {
+  background-color: #0e9156;
+  border-color: #0e9156;
+}
+
+/*  
+* DonateStyle
+*/
+.donate {
+  padding: 80px 0;
+}
+.donate .section-heading {
+  text-align: center;
+  padding-bottom: 24px;
+}
+.donate .section-description {
+  text-align: center;
+}
+.donate .donate-container {
+  display: flex;
+  justify-content: space-around;
+}
+.donate .donate-container .donate-item {
+  padding: 32px 0;
+}
+.donate .donate-container .donate-item h4 {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.donate .donate-container .donate-item h4:hover {
+  background-color: #c6e4d6;
+}
+.donate .amount-field {
+  text-align: center;
+}
+.donate .amount-field input {
+  width: 85%;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #0e0e0e15;
+}
+.donate .button-container {
+  text-align: center;
+  padding-top: 32px;
+}
+.donate .button-container .btn-primary:hover {
+  background-color: #0e9156;
+  border-color: #0e9156;
+}
+
+/*  
+* NewsletterStyle
+*/
+.newsletter {
+  padding-bottom: 80px;
+}
+.newsletter .newsletter-container {
+  padding: 80px 0;
+  background-color: #c6e4d6;
+  border-radius: 24px;
+  text-align: center;
+}
+.newsletter .section-description {
+  padding: 16px 227px 24px;
+}
+.newsletter .subscription-container {
+  text-align: center;
+  width: 750px;
+  margin: 0 auto;
+}
+.newsletter .subscription-container input {
+  border: none;
+  font-size: 16px;
+}
+.newsletter .subscription-container input[type="email"] {
+  width: 65%;
+  padding: 18px 40px;
+  border-radius: 8px 0 0 8px;
+}
+.newsletter .subscription-container input[type="submit"] {
+  padding: 18px 35px;
+  margin-left: -5px;
+  border-radius: 0 8px 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #006a50;
+  color: #ffffff;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.newsletter .subscription-container input[type="submit"]:hover {
+  background-color: #0e9156;
+}
+.newsletter p {
+  padding-top: 24px;
+  color: #0e0e0e70;
+}
+input:focus-visible {
+  outline: 0;
+}
+
+/*  
+* FooterStyle
+*/
+footer {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+footer .footer-container {
+  padding: 0 160px;
+  text-align: center;
+}
+footer hr {
+  margin: 32px 50px;
+  background-color: #0e0e0e10;
+  text-align: center;
+}
+.social-icons img {
+  margin: 0 5px;
+  width: 25px;
+}
+
+/* Responsive Global Container Padding */
+@media (max-width: 1024px) {
+  header,
+  main {
+    padding: 0 40px;
+  }
+  .recent-news .news-item {
+    flex-direction: column;
+  }
+  .recent-news .news-item.reverse {
+    flex-direction: column;
+  }
+  .newsletter .newsletter-container {
+    padding: 40px 20px;
+  }
+  .newsletter .section-description {
+    padding: 0 40px 24px;
+  }
+  .newsletter .subscription-container {
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .banner .banner-container {
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .pillar .pillar-container .pillar-items,
+  .vision .vision-container .vision-items,
+  .donate .donate-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recent-news .news-item {
+    padding: 24px;
+  }
+
+  .option .option-container .questions-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .option .questions-body .question-item {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .option .questions-body .question-item .answer {
+    border-left: none;
+    border-top: 1px solid #0e0e0e15;
+    width: 100%;
+  }
+
+  .donate .donate-container .donate-item h4 {
+    padding: 20px;
+    font-size: 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  img {
+    max-width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .banner .banner-container .title {
+    font-size: 30px;
+  }
+
+  .section-heading {
+    font-size: 28px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .donate .amount-field input {
+    width: 95%;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .newsletter .subscription-container input[type="email"],
+  .newsletter .subscription-container input[type="email"],
+  .newsletter .subscription-container input[type="submit"] {
+    width: 50%;
+    margin: 5px 0;
+    border-radius: 8px;
+  }
+
+  .newsletter .subscription-container {
+    flex-direction: column;
+  }
+
+  footer .footer-container {
+    padding: 0 20px;
+  }
+}
